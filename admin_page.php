@@ -35,7 +35,7 @@
         if($num_rows!=0){
             echo'<table class="quiz_table"><tr class="quiz_tr_main"><td class="quiz_td_main">ID</td><td class="quiz_td_main">Название опроса</td><td class="quiz_td_main">Ссылка</td><td class="quiz_td_main">Статус</td><td class="quiz_td_main">Добавить</td><td class="quiz_td_main">Удалить</td></tr>';
             for ($i=0;$i<$num_rows;$i++){
-                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'</td><td><a href="add_quiz_form.php"><img src="img/+.png" class="icon_img"></td><td><a href="delete_quiz.php?id='.$quiz_data[$i][0].'"><img src="img/x.png" class="icon_img"></a></td></tr>');
+                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'<a href="change_quiz_status.php?id='.$quiz_data[$i][0].'&status='.$quiz_data[$i][3].'"><img src="img/reload.png" class="icon_img"></td><td><a href="add_quiz_form.php"><img src="img/+.png" class="icon_img"></td><td><a href="delete_quiz.php?id='.$quiz_data[$i][0].'"><img src="img/x.png" class="icon_img"></a></td></tr>');
             }
             echo'</table>';
         }

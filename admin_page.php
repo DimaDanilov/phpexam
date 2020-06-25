@@ -19,10 +19,10 @@
         <a href="add_quiz_form.php" class="questions_title_link"><h2 class="questions_title">Добавить опрос<img src="img/+.png" class="icon_img"></h2></a>
         
         <?php
-        $host="localhost";
-        $user="root";
-        $password="";
-        $db="phpforms_database";
+        $host="std-mysql";
+        $user="std_952";
+        $password="1234512345";
+        $db="std_952";
          
         $a=mysqli_connect($host,$user,$password,$db);
         mysqli_select_db($a,$db);

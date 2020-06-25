@@ -17,7 +17,9 @@ $password=$_POST['password'];
     $result=mysqli_query($a, $sql);
     
     if(mysqli_num_rows($result)!=0){
-        echo "You Have Successfully Logged in";
+        session_start();
+        $_SESSION['admin'] = true;
+        header('Location: a.php');
         exit();
     }
     else{

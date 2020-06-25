@@ -16,6 +16,7 @@
         </div>
         <h1 class="admin_page__title">Добро пожаловать, Админ!</h1>
         <h2 class="questions_title">Текущие опросы</h2>
+        <a href="add_quiz_form.php" class="questions_title_link"><h2 class="questions_title">Добавить опрос<img src="img/+.png" class="icon_img"></h2></a>
         
         <?php
         $host="localhost";
@@ -32,9 +33,9 @@
 
         $quiz_data=mysqli_fetch_all($result);
         if($num_rows!=0){
-            echo'<table class="quiz_table"><tr class="quiz_tr_main"><td class="quiz_td_main">ID</td><td class="quiz_td_main">Название опроса</td><td class="quiz_td_main">Ссылка</td><td class="quiz_td_main">Статус</td><td class="quiz_td_main">Удалить</td></tr>';
+            echo'<table class="quiz_table"><tr class="quiz_tr_main"><td class="quiz_td_main">ID</td><td class="quiz_td_main">Название опроса</td><td class="quiz_td_main">Ссылка</td><td class="quiz_td_main">Статус</td><td class="quiz_td_main">Добавить</td><td class="quiz_td_main">Удалить</td></tr>';
             for ($i=0;$i<$num_rows;$i++){
-                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'</td><td><a href="delete_quiz.php?id='.$quiz_data[$i][0].'"><img src="img/x.png" class="icon_img"></a></td></tr>');
+                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'</td><td><a href="add_quiz_form.php"><img src="img/+.png" class="icon_img"></td><td><a href="delete_quiz.php?id='.$quiz_data[$i][0].'"><img src="img/x.png" class="icon_img"></a></td></tr>');
             }
             echo'</table>';
         }

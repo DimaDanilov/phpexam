@@ -32,6 +32,11 @@ body{
 
 .questions_title{
     margin: 3%;
+    color:black;
+}
+
+.questions_title_link{
+    text-decoration: none;
 }
 
 .quiz_table{
@@ -58,5 +63,22 @@ body{
 }
 
 .icon_img{
-    max-width: 15%;
+    max-width: 2.5vw;
+}
+
+.button_add_quiz{
+    color: white;
+    width: 40%;
+    padding: 1.5%;
+    margin: 0 30%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.15s;
+    background-color: rgb(20, 20, 175);
+}
+    
+.button_add_quiz:hover{
+    background-color: white;
+    border-color: rgb(20, 20, 175);
+    color: rgb(20, 20, 175);
 }

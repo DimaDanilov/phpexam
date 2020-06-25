@@ -56,3 +56,7 @@ body{
 .quiz_elem{
     padding: 3% 0;
 }
+
+.icon_img{
+    max-width: 15%;
+}

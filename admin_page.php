@@ -32,9 +32,9 @@
 
         $quiz_data=mysqli_fetch_all($result);
         if($num_rows!=0){
-            echo'<table class="quiz_table"><tr class="quiz_tr_main"><td class="quiz_td_main">ID</td><td class="quiz_td_main">Название опроса</td><td class="quiz_td_main">Ссылка</td><td class="quiz_td_main">Статус</td></tr>';
+            echo'<table class="quiz_table"><tr class="quiz_tr_main"><td class="quiz_td_main">ID</td><td class="quiz_td_main">Название опроса</td><td class="quiz_td_main">Ссылка</td><td class="quiz_td_main">Статус</td><td class="quiz_td_main">Удалить</td></tr>';
             for ($i=0;$i<$num_rows;$i++){
-                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'</td></tr>');
+                echo('<tr class="quiz_tr"><td class="quiz_elem">'.$quiz_data[$i][0].'</td><td class="quiz_elem">'.$quiz_data[$i][1].'</td><td class="quiz_elem">'.$quiz_data[$i][2].'</td><td class="quiz_elem">'.$quiz_data[$i][3].'</td><td><a href="delete_quiz.php?id='.$quiz_data[$i][0].'"><img src="img/x.png" class="icon_img"></a></td></tr>');
             }
             echo'</table>';
         }

@@ -1,0 +1,50 @@
+form{
+    width: 70%;
+    background-color: rgb(20, 20, 175);
+    color: white;
+    border-radius: 50px;
+    padding: 5%;
+    margin: 15vh auto 0 auto;
+}
+
+.form_container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form_h1{
+    text-align: center;
+}
+
+.form_label{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 15px;
+    padding: 5px;
+}
+
+.form_input{
+    width: 85%;
+    padding: 5px;
+}
+
+.form_field{
+    margin: 25px 0;
+}
+
+.button_login{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.15s;
+    color: rgb(20, 20, 175);
+}
+
+.button_login:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}

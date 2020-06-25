@@ -19,7 +19,7 @@ $password=$_POST['password'];
     if(mysqli_num_rows($result)!=0){
         session_start();
         $_SESSION['admin'] = true;
-        header('Location: a.php');
+        header('Location: admin_page.php');
         exit();
     }
     else{

@@ -9,12 +9,12 @@
     <?php
     session_start();
     if (isset($_SESSION['admin'])): ?>
-
-    <a href="2.php">Выход</a>
+        <!-- Если вошёл -->
+        <a href="exit_login.php">Выход</a>
 
     <?php else: ?>
-        not nice
-    <a href="index.php">Войти</a>
+        <!-- Если не вошёл -->
+        <a href="index.php">Войти</a>
 
     <?php endif; ?>
 </body>

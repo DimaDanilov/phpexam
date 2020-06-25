@@ -56,6 +56,11 @@ body{
 
 .quiz_tr{
     background-color: rgb(8, 136, 187);
+    transition: 0.3s;
+}
+
+.quiz_tr:hover{
+    background-color: rgb(18, 160, 216);
 }
 
 .quiz_elem{
@@ -64,6 +69,11 @@ body{
 
 .icon_img{
     max-width: 2.5vw;
+    transition: 0.3s;
+}
+
+.icon_img:hover{
+    transform: scale(1.2);
 }
 
 .button_add_quiz{

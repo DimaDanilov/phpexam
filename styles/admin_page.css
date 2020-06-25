@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.admin_menu{
+    background-color: rgb(20, 20, 175);
+    width: 100%;
+    padding: 3vh 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exit_btn{
+    color: white;
+    display: inline-block;
+    margin-right: 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1%;
+    background-color: rgb(57, 149, 235);
+    transition: 0.3s;
+}
+
+.exit_btn:hover{
+    transform: scale(1.1);
+}
+
+.admin_page__title{
+    text-align: center;
+}
+
+.questions_title{
+    margin: 3%;
+}
+
+.quiz_table{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.quiz_tr_main{
+    background-color: rgb(34, 0, 255);
+}
+
+.quiz_td_main{
+    padding: 1% 0;
+}
+
+.quiz_tr{
+    background-color: rgb(8, 136, 187);
+}
+
+.quiz_elem{
+    padding: 3% 0;
+}

@@ -37,7 +37,7 @@ $password=$_POST['password'];
     <title>Вход</title>
 </head>
 <body>
-    <form method="POST" action="#">
+    <form method="POST" action="#" class="login_form">
     <h1 class="form_h1">Вход для администратора</h1>
         <div class="form_container">
             <div class="form_field">

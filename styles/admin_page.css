@@ -37,6 +37,8 @@ body{
 
 .questions_title_link{
     text-decoration: none;
+    display: inline-block;
+    margin: 3%;
 }
 
 .quiz_table{
